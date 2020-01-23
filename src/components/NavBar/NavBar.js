@@ -93,17 +93,17 @@ class NavBar extends Component {
         // return navLinks
     }
     render() { 
-        let navColor = "transparent";
+        let navColor = "black";
         if(this.props.location.pathname !=='/'){
             navColor="black";
         }
         const navLinks= this.buildNavLinks();
         return (
-            <div className="container-fluid nav">
+            <div className="container nav">
             <div className="row">
                 <nav className={navColor}>
                     <div className="nav-wrapper">
-                        <Link to="#" className=""><h3>RandoList</h3></Link>
+                        <Link to="#" className=""><h3>  Hellos RandoList</h3></Link>
                         {navLinks}
 
                     </div>
