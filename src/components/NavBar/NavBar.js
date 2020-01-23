@@ -8,9 +8,14 @@ import {bindActionCreators} from 'redux';
 
 
 class NavBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
+    state = {
+        showModal: false,
+        modalContent: <ModalSplash/>
+    }
+    componentDidMount(){
+        this.setState({
+            modalContent:<ModalSplash changeModalContent={this.changeModalContent}/>
+        })
     }
     render() { 
         return (<> 
