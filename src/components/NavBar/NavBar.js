@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './NavBar.css';
+import Login from './Login';
 import {Link} from 'react-router-dom';
 import ModalSplash from './ModalSplash';
 import {connect} from 'react-redux';
@@ -17,9 +18,17 @@ class NavBar extends Component {
             modalContent:<ModalSplash changeModalContent={this.changeModalContent}/>
         })
     }
+    changeModalContent=(newContent)=>{
+        let modalContent = <ModalSplash changeModalContent={this.changeModalContent}/>
+        if (newContent==='login'){
+            modalContent = <Login changeModalContent={this.changeModalContent} closeModal={this.closeModal}/>
+        }
+        this.setState({modalContent})
+    }
     render() { 
         return (<> 
         <p>Navbar Sanity</p>
+        <Login/>
          </>);
     }
 }

@@ -8,3 +8,5 @@ function ModalSplash(props){
         </div>
     )
 }
+
+export default ModalSplash;
