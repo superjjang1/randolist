@@ -10,7 +10,19 @@ class Home extends Component {
         return (<> 
             <div className="container-fluid">
                 <div className="row">
-                    <h1>Sanity</h1>
+                    <div className="col">
+                        something
+                    </div>
+                    <div className="col">
+                        something
+                    </div>
+                    <div className="w-100"></div>
+                    <div className="col">
+                        something
+                    </div>
+                    <div className="col">
+                        something
+                    </div>
                 </div>
             </div>
          </>);

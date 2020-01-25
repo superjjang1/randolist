@@ -2,3 +2,7 @@
     width: 100vw;
     height: 10vh;
 }
+.col {
+    border: 1px solid black;
+    height: 20vh;
+}
