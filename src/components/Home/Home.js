@@ -8,8 +8,11 @@ class Home extends Component {
     }
     render() { 
         return (<> 
-            <h1>Sanity Check</h1>
-            <p>Just doing stuff here.</p>
+            <div className="container-fluid">
+                <div className="row">
+                    <h1>Sanity</h1>
+                </div>
+            </div>
          </>);
     }
 }
