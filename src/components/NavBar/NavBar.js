@@ -3,8 +3,7 @@ import './NavBar.css';
 import Login from './Login';
 import {Link} from 'react-router-dom';
 import ModalSplash from './ModalSplash';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+
 
 
 
@@ -31,83 +30,91 @@ class NavBar extends Component {
             showModal: false
         })
     }
-    buildNavLinks = () =>{
-        let navLinks = 
-        <ul id="nav-mobile" className="Right">
-                <li>
-                    <Link to="#">Link</Link>
-                </li>
-                <li>
-                    <Link to="#">Link</Link>
-                </li>
-                <li>
-                    <Link to="#">Link</Link>
-                </li>
-                <li>
-                    <Link to="#">Link</Link>
-                </li>
-                <li>
-                    <Link to="#">Link</Link>
-                </li>
-            </ul>
+    // buildNavLinks = () =>{
+    //     let navLinks = 
+    //     <ul id="nav-mobile" className="Right">
+    //             <li>
+    //                 <Link to="#"> hello?</Link>
+    //             </li>
+    //             <li>
+    //                 <Link to="#">Link</Link>
+    //             </li>
+    //             <li>
+    //                 <Link to="#">Link</Link>
+    //             </li>
+    //             <li>
+    //                 <Link to="#">Link</Link>
+    //             </li>
+    //             <li>
+    //                 <Link to="#">Link</Link>
+    //             </li>
+    //         </ul>
+            
         
-        // if(!this.props.auth.token){
-        //     navLinks = 
-        //     <ul id="nav-mobile" className="Right">
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //     </ul>
-        // }else{
-        //     navLinks=
-        //     <ul id="nav-mobile" className="right">
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //         <li>
-        //             <Link to="#">Link</Link>
-        //         </li>
-        //     </ul>
-        // }
-        // return navLinks
-    }
+    //     // if(!this.props.auth.token){
+    //     //     navLinks = 
+    //     //     <ul id="nav-mobile" className="Right">
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //     </ul>
+    //     // }else{
+    //     //     navLinks=
+    //     //     <ul id="nav-mobile" className="right">
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //         <li>
+    //     //             <Link to="#">Link</Link>
+    //     //         </li>
+    //     //     </ul>
+    //     // }
+    //     // return navLinks
+    // }
     render() { 
-        let navColor = "black";
-        if(this.props.location.pathname !=='/'){
-            navColor="black";
-        }
-        const navLinks= this.buildNavLinks();
+       
+        // if(this.props.location.pathname !=='/'){
+        //     navColor="black";
+        // }
+        // const navLinks= this.buildNavLinks();
         return (
-            <div className="container nav">
+            <div className="container-fluid">
             <div className="row">
-                <nav className={navColor}>
-                    <div className="nav-wrapper">
-                        <Link to="#" className=""><h3>  Hellos RandoList</h3></Link>
-                        {navLinks}
-
-                    </div>
-                </nav>
+                <ul className="nav justify-content-center>">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Butt</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Butt</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Butt</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#">Butt</a>
+                    </li>
+                </ul>
                 <div className="login-modal" style={this.state.showModal ? {"display": "block"} : {}} >
                     <button id="close-modal" onClick={this.closeModal}>&Chi;</button>
                     <div className="modal-content">
