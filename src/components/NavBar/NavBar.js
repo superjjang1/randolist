@@ -103,17 +103,12 @@ class NavBar extends Component {
             <div className="row">
                 <ul className="nav justify-content-center>">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Butt</a>
+                        <a className="nav-link" href="#">Create PlayList</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Butt</a>
+                        <a className="nav-link" href="#">Login</a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Butt</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Butt</a>
-                    </li>
+                    
                 </ul>
                 <div className="login-modal" style={this.state.showModal ? {"display": "block"} : {}} >
                     <button id="close-modal" onClick={this.closeModal}>&Chi;</button>
