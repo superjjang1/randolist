@@ -12,8 +12,11 @@ class Home extends Component {
                 <div className="col">
                     <h3>Welcome to RandoList</h3>
                     <div className="row">
-                        <div className="col-m">
+                        <div className="col">
                             Want to create a quick and EZ playlist?
+                            <div className="col">
+                                Sign in with your spotify account
+                            </div>
                         </div>
                     </div>
                 </div>
