@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './NavBar.css';
 import Login from './Login';
-import {Link} from 'react-router-dom';
 import ModalSplash from './ModalSplash';
 
 

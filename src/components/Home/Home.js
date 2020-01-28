@@ -8,20 +8,13 @@ class Home extends Component {
     }
     render() { 
         return (<> 
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col">
-                        something
-                    </div>
-                    <div className="col">
-                        something
-                    </div>
-                    <div className="w-100"></div>
-                    <div className="col">
-                        something
-                    </div>
-                    <div className="col">
-                        something
+            <div className="container-lg-">
+                <div className="col">
+                    <h3>Welcome to RandoList</h3>
+                    <div className="row">
+                        <div className="col-m">
+                            Want to create a quick and EZ playlist?
+                        </div>
                     </div>
                 </div>
             </div>
