@@ -6,3 +6,6 @@
     border: 1px solid black;
     height: 80vh;
 }
+.col-sm-8 {
+    background-color: green;
+}
