@@ -9,8 +9,8 @@ class Home extends Component {
     render() { 
         return (<> 
             <div className="container-lg-">
-                <div className="col">
-                    <h3>Welcome to RandoList</h3>
+                
+                    <h3 className="text-white">Welcome to RandoList</h3>
                     <div className="row">
                         <div className="col-sm-8">
                             Want to create a quick and EZ playlist?
@@ -19,7 +19,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                
             </div>
          </>);
     }
