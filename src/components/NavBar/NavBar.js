@@ -100,15 +100,18 @@ class NavBar extends Component {
         return (
             <div className="container-fluid">
             <div className="row">
-                <ul className="nav justify-content-center>">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Create PlayList</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Login</a>
-                    </li>
-                    
-                </ul>
+            
+                    <ul className="nav">
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Create PlayList</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Login</a>
+                        </li>
+                        
+                    </ul>
+
+                
                 <div className="login-modal" style={this.state.showModal ? {"display": "block"} : {}} >
                     <button id="close-modal" onClick={this.closeModal}>&Chi;</button>
                     <div className="modal-content">

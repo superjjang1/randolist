@@ -8,7 +8,7 @@ class Home extends Component {
     }
     render() { 
         return (<> 
-            <div className="container-lg-">
+            <div className="">
                 
                     <h3 className="text-white">Welcome to RandoList</h3>
                     <div className="row">
