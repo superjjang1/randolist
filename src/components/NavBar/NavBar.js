@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './NavBar.css';
 import Login from './Login';
 import ModalSplash from './ModalSplash';
+import {Link} from 'react-router-dom';
+
 
 
 
@@ -108,10 +110,10 @@ class NavBar extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Create Playlist</a>
+                                <Link className="nav-link" href="#">Create Playlist</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Login</a>
+                                <Link className="nav-link" href="#">Login</Link>
                             </li>
                         </ul>
                     </div>
