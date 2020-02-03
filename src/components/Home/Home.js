@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Home.css';
+import SearchBox from './SearchBox';
 
 class Home extends Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Home extends Component {
                             <div className="col-sm-4 bg-dark text-white">
                                 Sign in with your spotify account
                             </div>
+                            <SearchBox/>
                         </div>
                     </div>
                     <div className="row">

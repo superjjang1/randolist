@@ -19,11 +19,11 @@
     padding: 0 15px;
 }
 .nav-non-link:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     background-color: initial;
 }
 .nav ul li:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     background-color: initial;    
 }
 .login-modal {
