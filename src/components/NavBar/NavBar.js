@@ -102,7 +102,7 @@ class NavBar extends Component {
         return (
             <div className="container-fluid">
             <div className="row">
-                <nav className="navbar navbar-dark bg-dark">
+                <nav className="navbar navbar-dark  navbar-expand-lg">
                     <a className="navbar-brand" href="#">RandoList</a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                         <span className="navbar-toggler-icon"></span>
