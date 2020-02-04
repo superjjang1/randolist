@@ -121,7 +121,7 @@ class NavBar extends Component {
                 
                                
                 <div className="login-modal" style={this.state.showModal ? {"display": "block"} : {}} >
-                    <button id="close-modal" onClick={this.closeModal}>&Chi;</button>
+                    <button id="close-modal" onClick={this.closeModal}>x</button>
                     <div className="modal-content">
 
                     {this.state.modalContent}

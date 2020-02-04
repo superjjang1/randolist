@@ -15,10 +15,10 @@
     color: white;
     cursor: pointer;
 }
-.nav .nav-non-link{
+.nav .nav-item{
     padding: 0 15px;
 }
-.nav-non-link:hover{
+.nav-item:hover{
     border-bottom: 3px solid white;
     background-color: initial;
 }
