@@ -9,11 +9,11 @@ class Home extends Component {
     }
     render() { 
         return (<> 
-            <div className="">
+            <div className="container-fluid mw-80">
                 
                     <h3 className="text-white">Welcome to RandoList</h3>
                     <div className="row">
-                        <div className="col-sm-8">
+                        <div className="home col-sm-8">
                             Want to create a quick and EZ playlist?
                             <div className="col-sm-4 bg-dark text-white">
                                 Sign in with your spotify account
@@ -21,11 +21,11 @@ class Home extends Component {
                             <SearchBox/>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col">
+                   
+                        <div className="col-m">
                             <h1 className="text-white">sanity</h1>
                         </div>
-                    </div>
+                    
                 
             </div>
          </>);
