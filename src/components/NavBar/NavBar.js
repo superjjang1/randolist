@@ -18,6 +18,11 @@ class NavBar extends Component {
             modalContent:<ModalSplash changeModalContent={this.changeModalContent}/>
         })
     }
+    login=(e)=>{
+        this.setState({
+            showModal:true
+        })
+    }
     changeModalContent=(newContent)=>{
         let modalContent = <ModalSplash changeModalContent={this.changeModalContent}/>
         if (newContent==='login'){
@@ -113,7 +118,7 @@ class NavBar extends Component {
                                 <Link className="nav-link" href="#">Create Playlist</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">Login</Link>
+                                <Link className="nav-link" href="#" onClick={this.login}>Login</Link>
                             </li>
                         </ul>
                     </div>
