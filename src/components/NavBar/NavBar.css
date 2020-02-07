@@ -29,7 +29,7 @@
 .login-modal {
     display: none;
     background-color: white;
-    width: 30%;
+    width: 30% !important; 
     max-width: 568px !important;
     position: absolute;
     left: 0;
@@ -67,6 +67,8 @@
 .modal-content{
     background-color: black;
     border-radius: 10px;
+    height: 30px;
+    width: auto;
 }
 .login-modal{
     background-color: rgba(15, 113, 15, 1);
