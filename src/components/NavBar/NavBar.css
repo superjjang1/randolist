@@ -60,3 +60,14 @@
     z-index: 1;
     background-color: #484848;
 }
+.spotify-login{
+    background-color: black;
+    border-radius: 10px;
+}
+.modal-content{
+    background-color: black;
+    border-radius: 10px;
+}
+.login-modal{
+    background-color: rgba(15, 113, 15, 1);
+}

@@ -4,7 +4,7 @@ import React from 'react';
 function ModalSplash(props){
     return(
         <div>
-            <button className="spotify-login">Login With Spotify</button>
+            <button className="spotify-login text-success">Login With Spotify</button>
         </div>
     )
 }
