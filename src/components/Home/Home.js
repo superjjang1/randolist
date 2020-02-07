@@ -1,11 +1,32 @@
 import React, {Component} from 'react';
 import './Home.css';
 import SearchBox from './SearchBox';
+const queryString = require("query-string");
+const SpotifyWebApi = require("spotify-web-api-node");
+const spotifyApi = new SpotifyWebApi();
 
 class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            userInfo: {}
+         };
+    }
+    componentDidMount() {
+        const {location} = this.props;
+        const {access_token} = queryString.parse(location.search);
+        if (!access_token) return;
+        spotifyApi.setAccessToken(access_token);
+        spotifyApi.getMe().then(
+            data=>{
+                this.setState({
+                    userInfo: data.body
+                });
+            },
+            err =>{
+                console.log("something is wrong",err);
+            }
+        )
     }
     render() { 
         return (<> 
@@ -18,6 +39,7 @@ class Home extends Component {
                             <div className="col-sm-4 bg-dark text-white">
                                 Sign in with your spotify account
                             </div>
+                            <h1>Hello {this.state.userInfo.display_name}</h1>
                             <SearchBox/>
                         </div>
                     </div>
