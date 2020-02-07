@@ -34,9 +34,9 @@ class Home extends Component {
                 
                     <h3 className="text-white">Welcome to RandoList</h3>
                     <div className="row">
-                        <div className="home col-sm-8">
+                        <div className="home col-sm-8 heroman">
                             Want to create a quick and EZ playlist?
-                            <div className="col-sm-4 bg-dark text-white">
+                            <div className="col-sm-4 bg-dark text-white spotifyman">
                                 Sign in with your spotify account
                             </div>
                             <h1>Hello {this.state.userInfo.display_name}</h1>
