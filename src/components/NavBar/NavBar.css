@@ -64,10 +64,13 @@
     background-color: black;
     border-radius: 10px;
 }
+.logintext{
+    color: green;
+}
 .modal-content{
     background-color: black;
     border-radius: 10px;
-    height: 30px;
+    height: auto;
     width: auto;
 }
 .login-modal{
