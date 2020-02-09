@@ -21,6 +21,7 @@ class Home extends Component {
             data=>{
                 this.setState({
                     userInfo: data.body
+                    
                 });
             },
             err =>{
@@ -30,7 +31,7 @@ class Home extends Component {
     }
     render() { 
         return (<> 
-            <div className="container-fluid mw-80">
+            <div className="container-fluid">
                 
                     <h3 className="text-white">Welcome to RandoList</h3>
                     <div className="row">

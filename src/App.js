@@ -9,10 +9,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="container-fluid">
+        
           <Route exact path="/" component={NavBar}/>
           <Route exact path="/" component={Home}/>
-        </div>
+        
       </div>
     </Router>
   );

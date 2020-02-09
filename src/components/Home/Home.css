@@ -18,6 +18,8 @@ body{
 }
 .home {
     padding: 30px;
+    justify-content: center;
+    align-content: center;
 }
 .spotifyman{
     border-radius: 10px;
