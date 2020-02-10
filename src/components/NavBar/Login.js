@@ -18,7 +18,7 @@ const Login = () =>(
         variant="contained"
         color="primary"
         onClick={() => {
-          window.location = `${process.env.REACT_APP_SERVER_URL}/auth/spotify`;
+          window.location = `http://localhost:8010/login`;
         }}
       >
         Connect with Spotify

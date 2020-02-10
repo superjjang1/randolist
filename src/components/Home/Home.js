@@ -33,7 +33,7 @@ class Home extends Component {
         return (<> 
             <div className="container-fluid">
                 
-                    <h3 className="text-white">Welcome to RandoList</h3>
+                    <h3 className="text-white">Welcome to RandoList {this.state.userInfo.display_name}</h3>
                     <div className="row">
                         <div className="home col-sm-8 heroman">
                             Want to create a quick and EZ playlist?
@@ -41,6 +41,7 @@ class Home extends Component {
                                 Sign in with your spotify account
                             </div>
                             <h1>Hello {this.state.userInfo.display_name}</h1>
+                            
                             <SearchBox/>
                         </div>
                     </div>
