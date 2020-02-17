@@ -40,7 +40,7 @@ class Home extends Component {
                             <div className="col-sm-4 bg-dark text-white spotifyman">
                                 Sign in with your spotify account
                             </div>
-                            <h1>Hello {this.state.userInfo.display_name}</h1>
+                            <h1>Hello {this.state.userInfo.display_name}, let's make a playlist!</h1>
                             
                             <SearchBox/>
                         </div>

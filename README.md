@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## RandoList
+basically an app to generate playlists off of artist, album, and songs.
+atleast brushing up on API usage, and OAUTH
 
 ## Available Scripts
 
