@@ -11,15 +11,18 @@
     box-shadow: none;
 
 }
+.nav-item{
+    color: black !important;
+}
 .nav ul li{
-    color: white;
+    color: black;
     cursor: pointer;
 }
 .nav .nav-item{
     padding: 0 15px;
 }
 .nav-item:hover{
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
     background-color: initial;
 }
 .nav ul li:hover{
