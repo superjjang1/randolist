@@ -18,7 +18,7 @@ const Login = () =>(
         variant="contained"
         color="primary"
         onClick={() => {
-          window.location = `http://localhost:8010/login`;
+          window.location = `http://localhost:8010/auth/spotify`;
         }}
       >
         Connect with Spotify
