@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect } from "react-router-do
 
 import Home from "./components/Home/Home";
 import Login from "./components/NavBar/Login";
-import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/NavBar/NavBar";
 import { ThemeProvider } from "@material-ui/styles";
 import { createMuiTheme } from "@material-ui/core/styles";
 
@@ -72,7 +72,7 @@ class App extends Component {
     return (<Router>
       <ThemeProvider theme={theme}>
         <div className="App">
-          <NavBar user={user} />
+          <Header user={user} />
           <Switch>
             <Route path="/login" component={Login} />
             {isAuthenticated !== null && (
